@@ -4,14 +4,11 @@ import Form from 'react-bootstrap/Form';
 
 export const Login = () => {
   return (
-    <div className='w-1/2 mx-auto text-left'>
+    <div className='w-1/2 mx-auto text-left text-white flex-col'>
         <Form>
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Email address</Form.Label>
         <Form.Control type="email" placeholder="Enter email" />
-        <Form.Text className="text-muted">
-          We'll never share your email with anyone else.
-        </Form.Text>
       </Form.Group>
 
       <Form.Group className="mb-3" controlId="formBasicPassword">
@@ -25,7 +22,6 @@ export const Login = () => {
         Submit
       </Button>
     </Form>
-    <div >Sign up</div>
     </div>
   )
 }
