@@ -1,0 +1,27 @@
+.Login {
+    margin: 4em 0;
+    font-family:'Oswald', 'Arial' !important;
+    .logo {
+        width: 200px;
+        margin: 0 auto;
+        img{
+            width: 100%;
+        }
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 2em;
+        padding: 0 2em;
+
+        div {
+            padding: .5em 0;
+        }
+
+        .form-check {
+            padding: 0 4em;
+            color: slategray;
+        }
+    }
+}

@@ -1,0 +1,32 @@
+.Home {
+    .content {
+
+        h2 {
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        .section {
+            margin: 2em auto;
+            padding: 0 2em;
+        }
+
+        .sermons{
+
+            .sa-video {
+                position:relative;
+                width:100%;
+                max-width: 600px;
+                height:16em;
+                max-height: 600px;
+                margin: 0 auto;
+
+                i-frame {
+                    position:absolute;
+                    left:0;
+                    top:0;
+                }
+            }
+        }
+    }
+}
