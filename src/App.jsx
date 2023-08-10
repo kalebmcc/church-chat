@@ -5,7 +5,7 @@ import Register from './components/forms/Register';
 import Header from './components/header/Header';
 import { Route, Routes, Outlet } from 'react-router-dom';
 import './sass/App.scss';
-import Home from './components/pages/home';
+import Home from './components/pages/Home';
 
 function App() {
   
