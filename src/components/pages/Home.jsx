@@ -13,7 +13,7 @@ const Home = () => {
             </div>
             <div className='sermons section'>
                 <h2>Latest Sermon</h2>
-                <div className='sa-video'><iframe tabindex="-1" width="100%" height="100%" src="https://embed.sermonaudio.com/player/v/broadcaster/cotwstl/" allowfullscreen frameborder="0" scrolling="no"></iframe></div>
+                <div className='sa-video'><iframe tabindex="-1" width="100%" height="100%" src="https://embed.sermonaudio.com/player/v/broadcaster/cotwstl/" allow="fullscreen" frameborder="0" scrolling="no"></iframe></div>
             </div>
             <div className='events section'>
                 <h2>Events</h2>

@@ -3,6 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import axios from 'axios';
 // import { useNavigate } from '../../../node_modules/react-router-dom';
 
 const Register = () => {
@@ -29,15 +30,17 @@ const Register = () => {
 
       try {
           let addUser = {...newUser}
-          const addUserURL = `${process.env.API_URL}/users/`
           console.log(addUser)
+          const addUserURL = `${process.env.API_URL}` + `users/`
+          console.log(addUserURL)
           let res = await axios.post(addUserURL, addUser)
           if(res){
               console.log('Successfully Registered!');
           }
-      } catch (error) {
-          console.log('Unexpected Error! Try Again!');
-      }
+        } catch (error) {
+            console.log(error)
+            console.log('Unexpected Error! Try Again!');
+        }
   }
 
   function handleChange(event){
@@ -81,7 +84,7 @@ const Register = () => {
     </Form.Group>
     <Form.Group className="mb-3" controlId="formBasicPassword">
       <Form.Label>Password</Form.Label>
-      <Form.Control onChange={handleChange} name='password-check' required type="password" placeholder="Password" />
+      <Form.Control onChange={handleChange} name='password' required type="password" placeholder="Password" />
     </Form.Group>
     <Form.Group className="mb-3" controlId="formBasicCheckbox">
       <Form.Check onChange={handleCheck}  name="notification" type="checkbox" label="I would like to recieve emails from Church Chat to stay up-to-date on announcemnts, events, and chat notifications." />
