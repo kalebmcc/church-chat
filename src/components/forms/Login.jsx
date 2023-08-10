@@ -15,8 +15,8 @@ export const Login = () => {
     //====================================
     // SET STATE/OR PULL CONTEXT
     //====================================
-    // const {loginStatus, setLoginStatus} = useContext(DataContext)
-    // const {logUser,setLogUser } = useContext(DataContext);
+    const {loginStatus, setLoginStatus} = useContext(DataContext);
+    const {logUser,setLogUser } = useContext(DataContext);
 
     async function handleSubmit(event){
         event.preventDefault();
