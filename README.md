@@ -1,8 +1,17 @@
-# React + Vite
+# Church Chat App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is an ongoing project in the works to create an central hub for church events, announcements, videos, and group chats.
 
-Currently, two official plugins are available:
+This is an application that is by the church for the church.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Installation
+
+1. Clone the repo
+2. Pull the .env from on render
+3. Run command to install dependencies
+    npm i
+# Application Architecture
+
+- Web Application
+    - [Frontend] React/Sass
+    - [Backend] Python(FastAPI)
