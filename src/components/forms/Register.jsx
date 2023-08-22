@@ -2,7 +2,7 @@ import React from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
+import { useState, dataContext } from 'react';
 import axios from 'axios';
 // import { useNavigate } from '../../../node_modules/react-router-dom';
 
@@ -40,6 +40,7 @@ const Register = () => {
         } catch (error) {
             console.log(error)
             console.log('Unexpected Error! Try Again!');
+            dataContext.setToast = true;
         }
   }
 
@@ -47,6 +48,7 @@ const Register = () => {
       event.preventDefault();
 
       console.log(event);
+      Toast.toast({html: 'hello'})
 
       setNewUser({ ...newUser, [event.target.name]: event.target.value })
   } 

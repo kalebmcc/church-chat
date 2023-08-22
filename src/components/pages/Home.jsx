@@ -1,10 +1,16 @@
 import React from 'react'
 import Header from '../header/Header'
+import Error from '../alerts/Error'
 
 const Home = () => {
+
+
+    
+
   return (
     <div className='Home'>
         <Header/>
+        <Error/>
         <div className="content">
             <div className='announcements section'>
                 <h2>Announcements</h2>
