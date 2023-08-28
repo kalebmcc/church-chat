@@ -6,6 +6,7 @@ import Header from './components/header/Header';
 import { Route, Routes, Outlet } from 'react-router-dom';
 import './sass/App.scss';
 import Home from './components/pages/Home';
+import NewEvent from './components/forms/NewEvent';
 
 function App() {
   
@@ -15,8 +16,8 @@ function App() {
         <Routes>
           <Route path="/login" element={<Login/>}/>
           <Route path="/register" element={<Register/>}/>
-          <Route path="/home" element={<Home/>}/>
-          <Route path="/chat" element={<Header/>}/>
+          <Route path="home" exact element={<Home/>}/>
+          <Route path="home/new-event" element={<NewEvent/>}/>
         </Routes>
     </div>
   )

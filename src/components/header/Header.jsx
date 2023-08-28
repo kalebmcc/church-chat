@@ -12,7 +12,7 @@ function Header() {
       {[false].map((expand) => (
         <Navbar key={expand} expand={expand} className="bg-body-tertiary mb-3">
           <Container fluid>
-            <Navbar.Brand href="/"><img src="https://cotwstl.org/wp-content/uploads/2020/03/church-of-the-word-logo.png"/></Navbar.Brand>
+            <Navbar.Brand href="/home"><img src="https://cotwstl.org/wp-content/uploads/2020/03/church-of-the-word-logo.png"/></Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
@@ -26,8 +26,8 @@ function Header() {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <Nav.Link href="#action1">Home</Nav.Link>
-                  <Nav.Link href="#action2">Profile</Nav.Link>
+                  <Nav.Link href="/home">Home</Nav.Link>
+                  <Nav.Link href="/profile">Profile</Nav.Link>
                   <NavDropdown
                     title="Groups"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}

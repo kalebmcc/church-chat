@@ -28,5 +28,29 @@
                 }
             }
         }
+        .events{
+            nav{
+                display: flex;
+                justify-content: space-between;
+
+                .event-icons{
+                    a{
+                        color: black;
+                        width: 24px;
+                        height: 24px;
+                        margin-right: 2em;
+                        padding: 10px;
+                        &:hover{
+                            color: slategray;
+                            border-radius: 10px;
+                        }
+                    }
+                    svg{
+                        width: 24px;
+                        height: auto;
+                    }
+                }
+            }
+        }
     }
 }
