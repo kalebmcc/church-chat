@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import { Link } from 'react-router-dom';
@@ -15,8 +15,8 @@ export const Login = () => {
     //====================================
     // SET STATE/OR PULL CONTEXT
     //====================================
-    const {loginStatus, setLoginStatus} = useContext(DataContext);
-    const {logUser,setLogUser } = useContext(DataContext);
+    const {loginStatus, setLoginStatus} = useState();
+    const {logUser,setLogUser } = useState();
 
     async function handleSubmit(event){
         event.preventDefault();

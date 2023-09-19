@@ -7,6 +7,7 @@ import { Route, Routes, Outlet } from 'react-router-dom';
 import './sass/App.scss';
 import Home from './components/pages/Home';
 import NewEvent from './components/forms/NewEvent';
+import Landing from './components/pages/Landing';
 
 function App() {
   
@@ -14,6 +15,7 @@ function App() {
   return (
     <div className=''>
         <Routes>
+          <Route path='/' element={<Landing/>}/>
           <Route path="/login" element={<Login/>}/>
           <Route path="/register" element={<Register/>}/>
           <Route path="home" exact element={<Home/>}/>

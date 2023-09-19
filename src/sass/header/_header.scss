@@ -10,3 +10,65 @@
         background-color: white !important;
     }
 }
+
+
+.landing-header{
+    nav{
+        @media (min-width:1000px){
+            height: 100px;
+        }
+    }
+    .navbar-brand {
+            width: 50px;
+            margin: 0 0 0 10px;
+    
+            img {
+                width: 100%;
+            }
+        }
+        .navbar {
+            background-color: white !important;
+        }
+    .header-button{
+        background-color: #206CF8;
+        color: white;
+        font-size: 14px;
+        font-weight: bold;
+        border-radius: 10px;
+        width: 120px;
+        padding: .6em 2em;
+        text-align: center;
+        margin: 2em auto;
+
+        @media (min-width: 1000px){
+            width: 120px;
+        }
+
+        &:hover{
+            color: white;
+            background-color: #548df8;
+        }
+    }
+
+    .landing-nav{
+        margin: 4em 0;
+        width: 100%;
+        justify-content: space-between;
+        text-align: center;
+
+        @media (min-width: 1000px) {
+                margin-left: 10%;
+                width: 200px;
+            }
+        
+        a{
+            font-weight: bold;
+            color: black;
+            border-bottom: 2px solid transparent;
+
+            &:hover{
+                border-bottom: 2px solid black;
+            }
+        }
+    }
+}
